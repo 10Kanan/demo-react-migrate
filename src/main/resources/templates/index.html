@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html xmlns:th="https://www.thymeleaf.org">
 <head lang="en">
-    <script th:inline="javascript">
-        /*<![CDATA[*/
-            var tokenMessage= /*[[${message}]]*/
 
-        /*]]>*/
-    </script>
     <meta charset="UTF-8"/>
     <title></title>
 </head>
-<body>
-<div>BOSSSSSS</div>
+<script th:inline="javascript">
+    /*<![CDATA[*/
+        var tokenMessage= /*[[${message}]]*/
+        var tokenMessage2= /*[[${bosskoko}]]*/
 
-<h1 th:text = "'Thymeleaf' + ${message} + 'App kubcs'"></h1>
+    /*]]>*/
+</script>
+<body>
+
     <div id="root"></div>
     <script src="bundle.js"></script>
 </body>

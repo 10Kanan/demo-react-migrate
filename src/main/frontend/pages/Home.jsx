@@ -13,11 +13,13 @@ const Home = () => {
         console.log(data);
       });
   }, []);
+var boss='awasdawdawdaw'
 
-console.log()
+console.log(tokenMessage2)
 
   return (
     <>
+    <h1 >Boss {tokenMessage2} KUB</h1>
       <h1>Project List</h1>
       <table>
         <thead>

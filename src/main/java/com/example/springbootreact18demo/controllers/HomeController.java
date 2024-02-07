@@ -10,6 +10,7 @@ public class HomeController {
     @GetMapping("/")
     public String index(Model model) {
         model.addAttribute("message", "Hello World");
+        model.addAttribute("bosskoko","I am atomic");
         return "index";
     }
 
