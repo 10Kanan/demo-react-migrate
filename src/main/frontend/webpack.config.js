@@ -3,9 +3,9 @@ const webpack = require('webpack');
 const pkg = require('./package.json');
 
 module.exports = {
-    entry: path.join(__dirname, './src/main/frontend/', pkg.main),
+    entry: path.join(__dirname, '../frontend/', pkg.main),
     output: {
-        path: path.join(__dirname, './src/main/resources/static'),
+        path: path.join(__dirname, '../../main/resources/static'),
         filename: 'bundle.js'
     },
     module: {
