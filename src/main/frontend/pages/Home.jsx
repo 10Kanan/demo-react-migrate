@@ -14,6 +14,8 @@ const Home = () => {
       });
   }, []);
 
+console.log()
+
   return (
     <>
       <h1>Project List</h1>
