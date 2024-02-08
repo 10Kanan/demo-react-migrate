@@ -2,7 +2,7 @@ import "../styles/style.css";
 import React, { useEffect, useState } from "react";
 import ProjectList from "../components/project_list";
 
-const Home = () => {
+export default function Home() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -13,13 +13,12 @@ const Home = () => {
         console.log(data);
       });
   }, []);
-var boss='awasdawdawdaw'
 
-console.log(tokenMessage2)
+  console.log(tokenMessage2);
 
   return (
     <>
-    <h1 >Boss {tokenMessage2} KUB</h1>
+      <h1>Boss {tokenMessage2} KUB</h1>
       <h1>Project List</h1>
       <table>
         <thead>
@@ -35,6 +34,4 @@ console.log(tokenMessage2)
       </table>
     </>
   );
-};
-
-export default Home;
+}

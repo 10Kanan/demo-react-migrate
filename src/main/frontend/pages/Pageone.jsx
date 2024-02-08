@@ -1,7 +1,5 @@
 import React from "react";
 
-const Pageone = () => {
+export default function PageOne() {
   return <div>Pageone jaaa</div>;
-};
-
-export default Pageone;
+}
