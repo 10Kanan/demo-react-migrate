@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode=production",
-    "start": "webpack --mode=development --watch --output-path ./target/classes/static"
+    "start": "webpack --mode=development --watch --output-path ./target/classes/static",
+    "webpack-dev-server": "webpack-dev-server"
   },
   "keywords": [],
   "author": "",
