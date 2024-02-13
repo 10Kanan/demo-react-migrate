@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode=production",
-    "start": "webpack --mode=development --watch --output-path ./target/classes/static",
+    "start": "webpack --mode=development --watch --output-path ../../../target/classes/static",
     "webpack-dev-server": "webpack-dev-server"
   },
   "keywords": [],
@@ -17,6 +17,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.0",
+    "react-scripts": "^5.0.1",
     "sort-by": "^1.2.0"
   },
   "devDependencies": {

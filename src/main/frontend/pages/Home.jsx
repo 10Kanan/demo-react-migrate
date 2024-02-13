@@ -14,11 +14,12 @@ export default function Home() {
       });
   }, []);
 
-  console.log(tokenMessage2);
+  console.log(checkBOSS);
+
 
   return (
     <>
-      <h1>Boss {tokenMessage2} KUB</h1>
+      <h1>Boss111KOKOKOHIHIHVOEWESF {tokenMessage2} KUB</h1>
       <h1>Project List</h1>
       <table>
         <thead>
