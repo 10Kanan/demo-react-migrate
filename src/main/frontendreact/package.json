@@ -13,7 +13,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+<<<<<<< HEAD
     "build": "BUILD_PATH='../resources/static/build' react-scripts build",
+=======
+    "build": "BUILD_PATH='../resources/static' react-scripts build",
+>>>>>>> 928ee23 (fix:spring thymleaf static path)
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

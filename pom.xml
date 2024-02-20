@@ -52,6 +52,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -72,6 +73,7 @@
 				</configuration>
 			</plugin>
 
+<<<<<<< HEAD
 			<plugin>
 				<groupId>com.github.eirslett</groupId>
 				<artifactId>frontend-maven-plugin</artifactId>
@@ -80,6 +82,16 @@
 						<workingDirectory>src/main/frontend</workingDirectory>
 						<installDirectory>target</installDirectory>
 					</configuration>
+=======
+<!--			<plugin>-->
+<!--				<groupId>com.github.eirslett</groupId>-->
+<!--				<artifactId>frontend-maven-plugin</artifactId>-->
+<!--				<version>1.12.1</version>-->
+<!--					<configuration>-->
+<!--						<workingDirectory>src/main/frontend</workingDirectory>-->
+<!--						<installDirectory>target</installDirectory>-->
+<!--					</configuration>-->
+>>>>>>> 928ee23 (fix:spring thymleaf static path)
 <!--				<executions>-->
 <!--					<execution>-->
 <!--						<id>Install node and npm</id>-->
@@ -117,11 +129,11 @@
 
 <!--				</executions>-->
 
-<!--				<configuration>-->
-<!--					<nodeVersion>20.10.0</nodeVersion>-->
-<!--					<workingDirectory>src/main/frontend</workingDirectory>-->
-<!--				</configuration>-->
-			</plugin>
+<!--&lt;!&ndash;				<configuration>&ndash;&gt;-->
+<!--&lt;!&ndash;					<nodeVersion>20.10.0</nodeVersion>&ndash;&gt;-->
+<!--&lt;!&ndash;					<workingDirectory>src/main/frontend</workingDirectory>&ndash;&gt;-->
+<!--&lt;!&ndash;				</configuration>&ndash;&gt;-->
+<!--			</plugin>-->
 
 <!--			<plugin>-->
 <!--				<groupId>org.apache.maven.plugins</groupId>-->
