@@ -16,11 +16,11 @@ export default function Home() {
 
   console.log(checkBOSS);
 
-
   return (
     <>
       <h1>Boss111KOKOKOHIHIHVOEWESF {tokenMessage2} KUB</h1>
       <h1>Project List</h1>
+      <h2>hiiiii check</h2>
       <table>
         <thead>
           <tr>
