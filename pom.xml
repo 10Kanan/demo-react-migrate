@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -125,28 +125,53 @@
 <!--			</plugin>-->
 
 <!--			<plugin>-->
-<!--				<groupId>org.apache.maven.plugins</groupId>-->
-<!--				<artifactId>maven-antrun-plugin</artifactId>-->
-<!--&lt;!&ndash;				<version></version>&ndash;&gt;-->
+<!--				<groupId>com.github.eirslett</groupId>-->
+<!--				<artifactId>frontend-maven-plugin</artifactId>-->
+<!--				<version>1.12.1</version>-->
+<!--				<configuration>-->
+<!--					<workingDirectory>src/main/frontend</workingDirectory>-->
+<!--					<installDirectory>target</installDirectory>-->
+<!--				</configuration>-->
 <!--				<executions>-->
 <!--					<execution>-->
+<!--						<id>Install node and npm</id>-->
+<!--						<goals>-->
+<!--							<goal>install-node-and-npm</goal>-->
+<!--						</goals>-->
 <!--						<phase>generate-resources</phase>-->
 <!--						<configuration>-->
-<!--							<target>-->
-<!--								<copy todir="${project.build.directory}/classes/static">-->
-<!--									<fileset dir="${project.basedir}/src/main/frontend/build/static"/>-->
-<!--								</copy>-->
-<!--								<copy todir="${project.build.directory}/classes/static">-->
-<!--									<fileset dir="${project.basedir}/src/main/frontend/build"/>-->
-<!--								</copy>-->
-<!--							</target>-->
+<!--							<nodeVersion>v20.10.0</nodeVersion>-->
+<!--							<npmVersion>10.2.3</npmVersion>-->
 <!--						</configuration>-->
-<!--						<goals>-->
-<!--							<goal>run</goal>-->
-<!--						</goals>-->
 <!--					</execution>-->
+
+<!--					<execution>-->
+<!--						<id>Install all of our depencies</id>-->
+<!--						<goals>-->
+<!--							<goal>npm</goal>-->
+<!--						</goals>-->
+<!--						<phase>generate-resources</phase>-->
+<!--						<configuration>-->
+<!--							<arguments>install</arguments>-->
+<!--						</configuration>-->
+<!--					</execution>-->
+
+<!--					<execution>-->
+<!--						<id>npm build and run</id>-->
+<!--						<goals>-->
+<!--							<goal>npm</goal>-->
+<!--						</goals>-->
+<!--						<phase>generate-resources</phase>-->
+<!--						<configuration>-->
+<!--							<arguments>run build</arguments>-->
+<!--						</configuration>-->
+<!--					</execution>-->
+
 <!--				</executions>-->
+
 <!--			</plugin>-->
+
+
 		</plugins>
 	</build>
 
