@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -52,7 +52,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
 	</dependencies>
 
 	<build>
@@ -73,25 +72,14 @@
 				</configuration>
 			</plugin>
 
-<<<<<<< HEAD
-			<plugin>
-				<groupId>com.github.eirslett</groupId>
-				<artifactId>frontend-maven-plugin</artifactId>
-				<version>1.12.1</version>
-					<configuration>
-						<workingDirectory>src/main/frontend</workingDirectory>
-						<installDirectory>target</installDirectory>
-					</configuration>
-=======
 <!--			<plugin>-->
 <!--				<groupId>com.github.eirslett</groupId>-->
 <!--				<artifactId>frontend-maven-plugin</artifactId>-->
 <!--				<version>1.12.1</version>-->
-<!--					<configuration>-->
-<!--						<workingDirectory>src/main/frontend</workingDirectory>-->
-<!--						<installDirectory>target</installDirectory>-->
-<!--					</configuration>-->
->>>>>>> 928ee23 (fix:spring thymleaf static path)
+<!--				<configuration>-->
+<!--					<workingDirectory>src/main/frontend</workingDirectory>-->
+<!--					<installDirectory>target</installDirectory>-->
+<!--				</configuration>-->
 <!--				<executions>-->
 <!--					<execution>-->
 <!--						<id>Install node and npm</id>-->
@@ -129,35 +117,9 @@
 
 <!--				</executions>-->
 
-<!--&lt;!&ndash;				<configuration>&ndash;&gt;-->
-<!--&lt;!&ndash;					<nodeVersion>20.10.0</nodeVersion>&ndash;&gt;-->
-<!--&lt;!&ndash;					<workingDirectory>src/main/frontend</workingDirectory>&ndash;&gt;-->
-<!--&lt;!&ndash;				</configuration>&ndash;&gt;-->
 <!--			</plugin>-->
 
-<!--			<plugin>-->
-<!--				<groupId>org.apache.maven.plugins</groupId>-->
-<!--				<artifactId>maven-antrun-plugin</artifactId>-->
-<!--&lt;!&ndash;				<version></version>&ndash;&gt;-->
-<!--				<executions>-->
-<!--					<execution>-->
-<!--						<phase>generate-resources</phase>-->
-<!--						<configuration>-->
-<!--							<target>-->
-<!--								<copy todir="${project.build.directory}/classes/static">-->
-<!--									<fileset dir="${project.basedir}/src/main/frontend/build/static"/>-->
-<!--								</copy>-->
-<!--								<copy todir="${project.build.directory}/classes/static">-->
-<!--									<fileset dir="${project.basedir}/src/main/frontend/build"/>-->
-<!--								</copy>-->
-<!--							</target>-->
-<!--						</configuration>-->
-<!--						<goals>-->
-<!--							<goal>run</goal>-->
-<!--						</goals>-->
-<!--					</execution>-->
-<!--				</executions>-->
-<!--			</plugin>-->
+
 		</plugins>
 	</build>
 
