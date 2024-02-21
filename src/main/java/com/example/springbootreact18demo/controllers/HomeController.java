@@ -1,6 +1,7 @@
 package com.example.springbootreact18demo.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
@@ -9,7 +10,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 public class HomeController {
 
     @GetMapping("/")
-    public String index() {
+    public String index(ModelMap mode) {
+        mode.addAttribute("bosskoko", "sawaddeekabb");
         return "index";
     }
 
